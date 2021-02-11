@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingVertical="2dp"
+    android:background="#6ABFFC"
     tools:context=".FormActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_height="41dp"
         android:text="Please Enter Your Information"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,9 +40,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:width="220dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,8 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:width="220dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
@@ -65,8 +70,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:width="220dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textPassword"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +85,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:width="220dp"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="textPassword"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +100,7 @@
             android:layout_height="46dp"
             android:text="Name:"
             android:textAlignment="center"
+            android:textColor="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameInput"
             app:layout_constraintEnd_toStartOf="@+id/nameInput"
             app:layout_constraintStart_toStartOf="parent" />
@@ -100,6 +110,7 @@
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/nameInput" />
@@ -109,6 +120,7 @@
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/emailInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/emailInput" />
@@ -118,6 +130,7 @@
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/passwordInput" />
@@ -127,6 +140,7 @@
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordConfirm"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/passwordConfirm" />
@@ -137,6 +151,7 @@
             android:layout_height="46dp"
             android:text="Email:"
             android:textAlignment="center"
+            android:textColor="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/emailInput"
             app:layout_constraintEnd_toStartOf="@+id/emailInput"
             app:layout_constraintStart_toStartOf="parent" />
@@ -147,6 +162,7 @@
             android:layout_height="42dp"
             android:text="Password:"
             android:textAlignment="center"
+            android:textColor="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordInput"
             app:layout_constraintEnd_toStartOf="@+id/passwordInput"
             app:layout_constraintStart_toStartOf="parent" />
@@ -157,10 +173,26 @@
             android:layout_height="49dp"
             android:text="Confirm Password:"
             android:textAlignment="center"
+            android:textColor="@color/white"
             app:flow_wrapMode="none"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordConfirm"
             app:layout_constraintEnd_toStartOf="@+id/passwordConfirm"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="Save"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordConfirm"
+            app:layout_constraintVertical_bias="0.022" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
