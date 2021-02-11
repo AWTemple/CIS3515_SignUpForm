@@ -106,7 +106,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/nameError"
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
@@ -117,7 +117,7 @@
             app:layout_constraintStart_toEndOf="@+id/nameInput" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/emailError"
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
@@ -127,7 +127,7 @@
             app:layout_constraintStart_toEndOf="@+id/emailInput" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/passwordError"
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
@@ -138,7 +138,7 @@
             app:layout_constraintStart_toEndOf="@+id/passwordInput" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/confirmError"
             android:layout_width="74dp"
             android:layout_height="46dp"
             android:textAlignment="center"
