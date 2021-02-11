@@ -22,12 +22,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="407dp"
-        android:layout_height="658dp"
+        android:layout_width="402dp"
+        android:layout_height="564dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,6 +113,7 @@
             android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameInput"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toEndOf="@+id/nameInput" />
 
         <TextView
@@ -133,6 +134,7 @@
             android:textColor="@android:color/holo_red_light"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordInput"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
             app:layout_constraintStart_toEndOf="@+id/passwordInput" />
 
         <TextView
@@ -184,8 +186,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
-            android:text="Save"
             android:backgroundTint="@color/white"
+            android:text="Save"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
