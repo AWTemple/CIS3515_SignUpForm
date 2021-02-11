@@ -9,7 +9,7 @@ it checks to see that all fields are filled with some input. It then validates t
 the email address is in a valid format, and also that the passwords match. If any errors
 in the input are present, it alerts the user to fix these before continuing, like so:
 
-![Error Examples](SignUpForm%20Screenshot.png =270x)
+<img src="SignUpForm Screenshot.png" alt="drawing" width="270" />
 
 If all checks are passed, it sends a toast to welcome the user to the theoretical app
 they are signing up for.
