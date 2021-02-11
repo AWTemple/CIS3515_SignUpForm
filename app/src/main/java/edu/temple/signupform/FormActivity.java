@@ -3,9 +3,11 @@ package edu.temple.signupform;
 import androidx.appcompat.app.AppCompatActivity;
 import java.lang.String;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -104,13 +106,24 @@ public class FormActivity extends AppCompatActivity {
         {
             String output = "Welcome, ";
             output += name;
-            output += "to the SignUpForm App.";
+            output += ", to the SignUpForm App.";
 
             //This code is more or less directly taken from the Android Developer Guide
             //https://developer.android.com/guide/topics/ui/notifiers/toasts
             Context context = getApplicationContext();
             CharSequence text = output;
             int duration = Toast.LENGTH_LONG;
+
+            //Hide the keyboard
+            //This was copied from a stackOverflow answer:
+            //https://stackoverflow.com/questions/1109022/how-do-you-close-hide-the-android-soft-keyboard-using-java
+            //User: Reto Meier
+            View v = this.getCurrentFocus();
+            if (v != null)
+            {
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            }
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();

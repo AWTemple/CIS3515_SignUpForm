@@ -107,10 +107,11 @@
 
         <TextView
             android:id="@+id/nameError"
-            android:layout_width="74dp"
+            android:layout_width="80dp"
             android:layout_height="46dp"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.555"
@@ -118,31 +119,34 @@
 
         <TextView
             android:id="@+id/emailError"
-            android:layout_width="74dp"
+            android:layout_width="80dp"
             android:layout_height="46dp"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/emailInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/emailInput" />
 
         <TextView
             android:id="@+id/passwordError"
-            android:layout_width="74dp"
+            android:layout_width="80dp"
             android:layout_height="46dp"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordInput"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintHorizontal_bias="0.583"
             app:layout_constraintStart_toEndOf="@+id/passwordInput" />
 
         <TextView
             android:id="@+id/confirmError"
-            android:layout_width="74dp"
+            android:layout_width="80dp"
             android:layout_height="46dp"
-            android:textAlignment="center"
+            android:textAlignment="viewStart"
             android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/passwordConfirm"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/passwordConfirm" />
